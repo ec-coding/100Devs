@@ -1,0 +1,399 @@
+/* Box Model Hack */
+* {
+  box-sizing: border-box;
+  font-size: 100%;
+}
+
+/* Clear fix hack */
+.clearfix:after {
+     content: ".";
+     display: block;
+     clear: both;
+     visibility: hidden;
+     line-height: 0;
+     height: 0;
+}
+
+.clear {
+	clear: both;
+}
+
+/******************************************
+/* BASE STYLES
+/*******************************************/
+
+body {
+    margin: 0;
+}
+
+a {
+    text-decoration: none;
+}
+
+li {
+    list-style: none;
+}
+
+h1 {
+    padding-top: 40px;
+    margin: 0 0 20px 0;
+    font-size: 2.3rem;
+}
+
+h2 {
+    font-size: 2rem;
+    margin: 5px 0 15px 0;
+}
+
+input {
+    padding: 4px 10px;
+    border-radius: 2px;
+    border: 1px solid gray;
+}
+
+button {
+    background: orange;
+    border: none;
+    padding: 5px 10px;
+    border-radius: 2px;
+}
+
+button a {
+    color: white;
+}
+
+.container {
+    width: 1248px;
+    margin: 0 auto;
+}
+.HeroContainer {
+    margin-top: 0;
+    background-image: url("https://bit.ly/3vZWvyx");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: 0px -100px;
+    height: 300px;
+    padding-left: 200px;
+}
+
+.left {
+    float: left;
+}
+
+.right {
+    float: left;
+}
+
+.BetaContainer {
+    background-image: url("https://bit.ly/3kGAqjr");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: 0px -180px;
+    padding: 50px 300px 0 500px;
+    height: 450px;
+}
+
+.BetaContainer span {
+    color: orange;
+    font-weight: bold;
+}
+
+.BetaContainer p {
+    color: rgb(97, 0, 97);
+}
+
+.ThetaContainer {
+    background: rgb(221, 229, 231);
+    padding-top: 50px;
+    height: 500px;
+    text-align: center;
+}
+
+.ThetaContainer h2 {
+    font-size: 2.2rem;
+    margin-bottom: 40px;
+}
+.ThetaContainer span {
+    color: orange;
+    font-weight: bold;
+    font-size: 1.1rem;
+}
+
+.ThetaNav ul li {
+    display: inline;
+    margin: 0 20px;
+}
+.ThetaNav ul li a{
+    font-weight: bold;
+}
+
+.Dish1 {
+    background-image: url("https://ichef.bbci.co.uk/food/ic/food_16x9_832/recipes/stressfreefullenglis_67721_16x9.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.Dish2 {
+    background-image: url("https://bit.ly/3vCQ3P8");
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.Dish3 {
+    background-image: url("https://bit.ly/3sa2os0");
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.Dish4 {
+    background-image: url("https://bit.ly/3LHHqZ3");
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.ThetaParent {
+    padding: 0 100px;
+}
+.ThetaChild {
+    border: 15px solid lightblue;
+    height: 250px;
+
+    width: 25%;
+    float: left;
+}
+
+.QuadraContainer {
+    padding-top: 50px;
+    text-align: center;
+    height: 800px;
+    background: lightgoldenrodyellow;
+}
+
+.Book {
+    color: orange;
+    font-weight: bold;
+}
+
+.QuadraContainer .PhoneIcon {
+    width: 30px;
+    height: 30px;
+}
+
+.Call {
+    display: block;
+    margin: 10px 0;
+}
+
+.QuadraContainer .Call a {
+    color: black;
+
+}
+
+.Phone {
+    font-weight: bold;
+    font-size: 1.5rem;
+    color: orange;
+}
+
+.QuadraDivider {
+    margin-top: 30px;
+}
+
+.QuadraDivider section {
+    width: 50%;
+    height: 50px;
+}
+
+.QuadraDivider span {
+    display: block;
+}
+
+.QuadraContainer img {
+    width: 800px;
+    height: 400px;
+}
+
+.QuadraImg {
+    margin-top: 40px;
+}
+
+.left > span + span {
+    font-size: 1.2rem;
+    font-weight: bold;
+}
+
+.right > span + span {
+    font-size: 1.2rem;
+    font-weight: bold;
+}
+
+.PentaContainer {
+    background: rgb(233, 226, 226);
+    height: 500px;
+    padding-top: 50px;
+    text-align: center;
+}
+
+.PentaContainer span {
+    display: block;
+    color: orange;
+    font-weight: bold;
+}
+
+.PentaContainer h2 {
+    font-size: 2.2rem;
+}
+.PentaContainer h3 {
+    font-size: 1.3rem;
+    margin-bottom: 0px;
+}
+
+.PentaContainer p {
+    padding: 0 150px;
+}
+
+.PentaPortrait {
+    margin-top: 20px;
+    width: 100px;
+    border-radius: 50%;
+}
+.PentaStars {
+    margin-top: 10px;
+    height: 20px;
+    width: 120px;
+    margin-bottom: 20px;
+}
+
+.PentaSelect {
+    opacity: 0.5;
+    margin-top: 20px;
+    width: 20px;
+    border-radius: 50%;
+}
+
+.Selected {
+    opacity: 1;
+}
+
+.PentaContainer p {
+    margin: 0 200px;
+}
+
+/******************************************
+/* LAYOUT
+/*******************************************/
+header {
+    margin: 0 auto;
+    width: 1248px;
+    background: rgb(224, 224, 224);
+    height: 100px;
+}
+
+header nav > * {
+    display: inline-block;
+}
+
+header nav ul {
+    float: right;
+}
+
+header nav ul li {
+    display: inline;
+    margin: 0 10px;
+}
+
+header nav ul li a {
+    color: black;
+    font-weight: bold;
+}
+
+.li-last {
+    margin-right: 50px;
+}
+
+footer {
+
+}
+
+/******************************************
+/* ADDITIONAL STYLES
+/*******************************************/
+
+@media only screen and (max-width: 600px) {
+    * {
+        max-width: 600px;
+
+    }
+    header {
+        text-align: center;
+    }
+
+    header ul {
+        padding: 0;
+    }
+
+    header ul li {
+        float: left;
+        font-size: 1rem;
+        width: 20%;
+    }
+
+    .li-last {
+        margin-right: 0px;
+    }
+
+    .container{
+        width: 600px;
+    }
+
+    .HeroContainer {
+        padding-left: 50px;
+    }
+
+    .BetaContainer {
+        background-image: url("https://bit.ly/3kGAqjr");
+        background-repeat: no-repeat;
+        background-size: cover;
+        background-position: -150px -0px;
+        padding: 100px 50px 0 50px;
+        height: 600px;
+    }
+
+    .ThetaContainer {
+        margin: 0 auto;
+        height: 750px;
+        
+    }
+    .ThetaNav ul {
+        padding: 0;
+    }
+    .ThetaNav ul li {
+        display: inline;
+        margin: 0 10px;
+    }
+
+    .ThetaChild {
+        width: 50%;
+    }
+
+    .QuadraContainer {
+        height: 700px;
+    }
+
+    .QuadraContainer img {
+        width: 480px;
+        height: 300px;
+    }
+
+    .PentaContainer {
+        height: 550px;
+    }
+
+    .PentaContainer p {
+        margin: 0 10px;
+    }
+
+    .PentaSelect {
+        margin-bottom: 30px;
+    }
+  }

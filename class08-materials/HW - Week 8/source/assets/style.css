@@ -1,0 +1,238 @@
+/* Box Model Hack */
+* {
+     box-sizing: border-box;
+     font-size: 100%;
+     font-family: 'Roboto', sans-serif;
+}
+
+/* Clear fix hack */
+.clearfix:after {
+     content: ".";
+     display: block;
+     clear: both;
+     visibility: hidden;
+     line-height: 0;
+     height: 0;
+}
+
+.clear {
+	clear: both;
+}
+
+/******************************************
+/* BASE STYLES
+/*******************************************/
+
+body {
+
+}
+.container {
+    width: 1248px;
+}
+li {
+    list-style: none;
+}
+a {
+    text-decoration: none;
+    color: #304659;
+}
+p, span, h1, h3 {
+    color: #304659;
+}
+.HeroContainer {
+    margin: 50px auto;
+    height: 400px;
+}
+.main-left {
+    padding-top: 20px;
+    width: 50%;
+    float: left;
+}
+.main-left span {
+    font-size: 0.8rem;
+    color: rgb(172, 172, 172);
+    font-weight: bold;
+}
+.main-left h1 {
+    margin-top: 15px;
+    padding-right: 350px;
+    font-size: 2rem;
+}
+.main-left > p {
+    padding-right: 350px;
+    font-size: 1rem;
+}
+.main-left input {
+    border: none;
+    background: gainsboro;
+    padding: 10px 20px;
+    color: rgb(145, 145, 145);
+}
+.main-left button {
+    background: #304659;
+    padding: 10px 20px;
+    text-align: center;
+    border: none;
+}
+.main-left button a{
+    color: white;
+    font-weight: normal;
+    padding: 0 auto;
+    text-align: center;
+    font-size: 1rem;
+}    
+.main-right {
+    width: 50%;
+    float: right;
+}
+.main-right img {
+    width: 625px;
+    height: 350px;
+}
+.main-left form {
+    float: left;
+}
+.btnParents {
+    font-weight: bold;
+}
+.HeroBtn {
+    float: left;
+}
+.BetaContainer {
+    margin: 0 auto;
+}
+.BetaQuarter {
+    padding-right: 80px;
+    float: left;
+    width: 25%;
+}
+.BetaQuarter img {
+    width: 50px;
+    height: 50px;
+}
+.BetaQuarter h3 {
+    font-size: 1.1rem;
+}
+.mobileHR {
+    opacity: 0;
+}
+/******************************************
+/* LAYOUT
+/*******************************************/
+header {
+    text-align: center;
+    padding-top: 20px;
+}
+header nav {
+    margin: 0 auto;
+}
+header nav > *{ 
+    display: inline-block;
+}
+.navUl {
+    margin: 5px auto;
+
+}
+header nav ul li {
+    display: inline;
+    margin: 0 15px;
+}
+nav ul a {
+    font-size: 1.1rem;
+}
+header nav button {
+    float: right;
+    border: none;
+    border-radius: 4px;
+}
+.NavButton {
+    background: #304659;
+    margin-top: -5px;
+    width: 90px;
+    height: 30px;
+}
+.NavButton a {
+    color: white;
+}
+.Source{
+    float: left;
+    margin: 5px auto;
+    font-size: 1.4rem;
+    font-weight: bold;
+}
+footer {
+
+}
+
+/******************************************
+/* ADDITIONAL STYLES
+/*******************************************/
+
+@media only screen and (max-width: 500px) {
+    * {
+        max-width: 500px;
+        margin: 0 auto;
+    }
+    header {
+        text-align: center;
+    }
+    .navUl, .NavButton {
+        display: none;
+    }
+    .Source {
+        font-size: 1.5rem;
+        float: none;
+    }
+    .mobileHR {
+        margin-top: 15px;
+        display: block;
+        opacity: 1;
+    }
+    .HeroContainer {
+        margin-top: 20px;
+        max-width: 500px;
+    }
+    .main-left {
+        width: 100%;
+        padding-left: 25px;
+        margin: 0 auto;
+        display: block;
+    }
+    .main-left h1 {
+        margin-bottom: 30px;
+        margin-top: 15px;
+        padding-right: 150px;
+        font-size: 2.5rem;
+    }
+    .main-left > p {
+        padding-right: 50px;
+        font-size: 1rem;
+        margin-bottom: 20px;
+    }
+    .main-left input {
+        float: none;
+        width: 450px;
+        margin-bottom: 15px;
+    }
+    .main-left button {
+        float: none;
+        width: 450px;
+        padding: 10px 200px;
+        margin-bottom: 20px;
+    }
+    .main-right {
+        text-align: center;
+        padding: 0 auto;
+        margin: 0 0 30px 0;
+        display: block;
+        width: 100%;
+    }
+    .main-right img {
+        text-align: center;
+        width: 90%;
+        height: 300px;
+    }
+    .BetaContainer {
+        display: none;
+    }
+  }

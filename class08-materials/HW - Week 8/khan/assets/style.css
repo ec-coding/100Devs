@@ -1,0 +1,138 @@
+/* Box Model Hack */
+* {
+     box-sizing: border-box;
+}
+
+/* Clear fix hack */
+.clearfix:after {
+     content: ".";
+     display: block;
+     clear: both;
+     visibility: hidden;
+     line-height: 0;
+     height: 0;
+}
+
+.clear {
+	clear: both;
+}
+
+/******************************************
+/* BASE STYLES
+/*******************************************/
+
+.container{
+    width: 1248px;
+    margin: 0 auto;
+}
+
+li {
+    list-style: none;
+}
+hr {
+    width: 100%;
+}
+a {
+    text-decoration: none;
+    color: blue;
+}
+p {
+    font-size: 1.5rem;
+}
+h1 {
+    font-weight: bold;
+    font-size: 3.1rem;
+    font-family: 'Libre Bodoni', serif;
+}
+.HeroContainer {
+    margin: 0 auto;
+    padding: 100px 0;
+}
+.HeroP {
+    margin: 30px 0;
+}
+input {
+    margin-left: 20px;
+    width: 80%;
+}
+.left {
+    height: 600px;
+    width: 45%;
+    float: left;
+}
+.left img{
+    width: 600px;
+    height: 600px;
+}
+.right {
+    padding-top: 100px;
+    height: 600px;
+    width: 45%;
+    float: right;
+}
+.right nav > *{
+    display: inline-block;
+    padding-left: 0px;
+}
+
+.right nav ul li{
+    width: 50px;
+    float: left;
+    margin-right: 60px;
+}
+.right nav ul a {
+    color: white;
+    font-size: 1.1rem;
+}
+button{
+    background: rgb(88, 88, 252);
+    height: 50px;
+    width: 100px;
+    border: none;
+    border-radius: 4px;
+}
+/******************************************
+/* LAYOUT
+/*******************************************/
+header {
+    height: 50px;
+    text-align: center;
+}
+header nav > *{
+    margin: 10px 0;
+    display: inline-block;
+}
+header a {
+    font-size: 1.3rem;
+    font-weight: bold;
+}
+header input {
+    padding-left: 10px;
+    background: rgb(182, 199, 198);
+    margin-top: 0px;
+    height: 30px;
+    font-size: 1.1rem;
+    color: blue;
+    border: none;
+    border-radius: 4px;
+}
+header nav > a, form {
+    float: left;
+}
+header nav h2 {
+    margin: 5px auto;
+    font-size: 1.7rem;
+    color: darkmagenta;
+}
+header nav ul {
+    float: right;
+}
+header nav ul li {
+    float: left;
+    margin: 0 20px;
+}
+
+
+/******************************************
+/* ADDITIONAL STYLES
+/*******************************************/

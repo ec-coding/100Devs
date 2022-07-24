@@ -1,0 +1,179 @@
+/* Box Model Hack */
+* {
+     box-sizing: border-box;
+     font-size: 100%;
+}
+
+/* Clear fix hack */
+.clearfix:after {
+     content: ".";
+     display: block;
+     clear: both;
+     visibility: hidden;
+     line-height: 0;
+     height: 0;
+}
+
+.clear {
+	clear: both;
+}
+
+/******************************************
+/* BASE STYLES
+/*******************************************/
+
+body {
+    font-family: 'Roboto', sans-serif;
+}
+a {
+    text-decoration: none;
+}
+nav {
+    margin: 0;
+}
+main {
+    padding: 10px 20px;
+}
+.Banner {
+    display: block;
+    color: orange;
+    font-weight: bold;
+}
+.left h1 {
+    margin-top: 10px;
+    margin-bottom: 0px;
+    font-size: 2.4rem;
+    color: black;
+}
+.left {
+    float: left;
+    width: 50%;
+}
+.left p {
+    font-size: 1.1rem;
+    padding-right: 100px;
+    color: gray;
+}
+.left span {
+    font-weight: bold;
+    font-size: 0.9rem;
+    margin-bottom: 10px;
+    color: black;
+}
+.right {
+    margin-top: -40px;
+    margin-left: -50px;
+    float: left;
+    width: 30%;
+    padding-right: 150px;
+}
+.right h2 {
+    color: black;
+    font-size: 1.7rem;
+    margin-bottom: 15px;
+}
+.right span {
+    color: black;
+}
+main div span {
+    display: block;
+}
+.HeroImg {
+    width: 825px;
+    height: 500px;
+}
+.BetaContainer {
+    margin-top: -100px;
+    margin-left: 200px;
+    height: 500px;
+    float: left;
+    width: 100%;
+}
+.BetaContainer hr {
+    width: 1300px;
+    float: left;
+}
+.BetaContainer h5 {
+    margin-top: -5px;
+    margin-bottom: 5px;
+}
+.BetaContainer span {
+    color: gray;
+}
+.BetaInside {
+    width: 100%;
+    display: inline-block;
+}
+.BetaInside div {
+    padding-right: 150px;
+    width: 30%;
+    float: left;
+}
+.BetaInside h2 {
+    font-size: 1.8rem;
+}
+.BetaInside img {
+    margin-left: -85px;
+    width: 350px;
+    height: 200px;
+}
+.BetaMiddle {
+    font-size: 1.2rem;
+    padding-top: 10px;
+    margin-left: -100px;
+    color: gray;
+}
+/******************************************
+/* LAYOUT
+/*******************************************/
+header {
+    float: left;
+    height: 800px;
+    width: 10%;
+    padding: 10px 15px;
+    margin-right: 20px;
+}
+header nav span {
+    display: block;
+    font-size: 2.1rem;
+}
+header nav span a{
+    font-weight: bold;
+}
+header nav span + span {
+    font-size: 1.2rem;
+    margin: 15px 0;
+}
+header nav span + span a{
+    color: orange;
+    font-weight: bold;
+}
+header nav span + span + span {
+    font-size: 1.1rem;
+    margin-bottom: 30px;
+}
+header nav span + span + span a {
+    color:rgb(116, 116, 116);
+    font-weight: 100;
+}
+header ul {
+    padding: 0;
+}
+header ul hr {
+    margin-left: 0;
+    display: block;
+    width: 30px;
+}
+header ul li {
+    display: block;
+    margin-bottom: 20px;
+}
+header nav ul li a {
+    font-size: 1.3rem;
+    color: rgb(116, 116, 116);
+}
+
+
+/******************************************
+/* ADDITIONAL STYLES
+/*******************************************/

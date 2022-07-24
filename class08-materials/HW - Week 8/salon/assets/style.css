@@ -1,0 +1,528 @@
+/* Box Model Hack */
+* {
+  box-sizing: border-box;
+  font-size: 100%;
+  font-family: 'Cormorant Garamond', serif;
+}
+
+/* Clear fix hack */
+.clearfix:after {
+     content: ".";
+     display: block;
+     clear: both;
+     visibility: hidden;
+     line-height: 0;
+     height: 0;
+}
+
+.clear {
+	clear: both;
+}
+
+/******************************************
+/* BASE STYLES
+/*******************************************/
+
+body {
+
+}
+
+li {
+    list-style: none;
+}
+
+a {
+    text-decoration: none;
+}
+
+h2 {
+    font-size: 1.8rem;
+}
+
+.HeroContainer a {
+    
+}
+
+button {
+    padding: 10px 5px;
+}
+
+.HeroContainer h1 {
+    font-size: 3rem;
+    margin-bottom: 10px;
+    color: white;
+}
+
+.container {
+    width: 1248px;
+    margin: 0 auto;
+}
+
+.HeroContainer {
+    height: 880px;
+    background-image: url("https://raw.githubusercontent.com/tacbodell/Ayesha-Salon/main/images/bg-main.png");
+    background-repeat: no-repeat;
+    background-size: 100%;
+    background-position: 0 -150px;
+    padding: 50px 0 0 0px;
+}
+
+.HeroContainer > * {
+    margin: 0 150px;
+}
+
+.HeroContainer span {
+    display: block;
+}
+
+.HeroContainer .ServiceButton {
+    background: black;
+    border: none;
+    padding: 10px 15px;
+}
+
+.HeroContainer .ServiceButton a {
+    color: white;
+}
+
+.HeroSpan {
+    color: white;
+    font-size: 1.1rem;
+}
+
+.HeroContainer h1 + span + button {
+    margin-top: 20px;
+    margin-bottom: 45px;
+}
+
+.OpenHours {
+    color: white;
+    margin-top: 20px;
+    margin-right: -60px;
+    float: right;
+    transform: rotate(90deg);
+}
+
+.HeroTrio {
+    padding-top: 100px;
+}
+
+.HeroPanel {
+    font-size: 0.7rem;
+    color: white;
+    padding-top: 40px;
+    padding-left: 15px;
+    height: 200px;
+    width: 200px;
+    background: black;
+}
+.HeroPanel a {
+    color: black;
+    font-weight: bold;
+    font-size: 0.7rem;
+}
+
+.HeroPanel .button {
+    font-size: 0.9rem;
+}
+
+.HeroPanel span {
+    margin-bottom: 10px;
+}
+
+.HeroPanel > span + span + span {
+    margin-bottom: 20px;
+}
+
+.HeroPanel strong {
+    font-size: 1.4rem;
+}
+
+.CarouselContainer {
+    padding-right: 100px;
+    float: right;
+    height: 50px;
+    width: 40%;
+    margin: 0;
+}
+
+.CarouselButton {
+    float: right;
+    width: 30px;
+    height: 30px;
+    background: white;
+    border-radius: 50%;
+    margin: 0 10px;
+}
+
+.HeroTrio {
+    margin-top: 50px;
+}
+
+.TrioChild {
+    width: 33.3333%;
+    float: left;
+    text-align: center;
+    padding: 0 20px;
+}
+
+.BetaContainer {
+    background: rgb(214, 222, 224);
+    height: 400px;
+    padding: 50px 200px;
+}
+
+.BetaLeft{
+    width: 50%;
+    float: left;
+}
+
+.BetaLeft button {
+    background: black;
+    border: none;
+    padding: 10px 15px;
+    margin-top: 10px;
+}
+
+.BetaLeft button a {
+    color: white;
+}
+
+.BetaRight {
+    text-align: center;
+    width: 50%;
+    float: right;
+    padding-left: 100px;
+    padding-top: 20px;
+}
+.BetaRight section {
+    height: 275px;
+    background-image: url("https://raw.githubusercontent.com/tacbodell/Ayesha-Salon/main/images/womanHair.png");
+    background-size: cover;
+    width: 400px;
+    margin: 0 auto;
+}
+
+.ThetaContainer {
+    text-align: center;
+    padding: 40px 200px 0 200px;
+    height: 450px;
+}
+
+.ThetaContainer img {
+    height: 300px;
+    width: 250px;
+}
+
+.Profile {
+    width: 33.3333%;
+    float: left;
+    height: 300px;
+}
+
+.NameBox {
+    padding-top: 5px;
+    height: 50px;
+    background: black;
+    margin: 0 50px;
+}
+
+.NameBox h4 {
+    color: white;
+    margin-top: 0;
+    margin-bottom: 0;
+}
+
+.NameBox span {
+    color: white;
+}
+
+.QuadraContainer {
+    padding: 100px 0 50px 100px;
+    height: 350px;
+    background: lightgray;
+}
+
+.QuadraContainer span {
+    font-weight: bold;
+    font-size: 0.9rem;
+    display: block;
+}
+
+.QuadraContainer strong {
+    font-size: 2rem;
+}
+
+.QuadraContainer button {
+    background: black;
+    border: none;
+    padding: 10px 20px;
+}
+
+.QuadraContainer a {
+    color: white;
+    font-size: 0.7rem;
+}
+
+.QuadraContainer span + span {
+    font-size: 1.3rem;
+    display: block;
+    margin-bottom: 15px;
+}
+
+.PentaContainer {
+    padding-top: 50px;
+    height: 400px;
+    text-align: center;
+}
+
+.PentaContainer h3 {
+    font-size: 1.5rem;
+}
+
+.PentaContainer hr {
+    width: 2%;
+    margin-bottom: 20px;
+}
+
+.PentaContainer section {
+    width: 33.3333%;
+    float: left;
+    padding: 5px;
+    height: 300px;
+}
+
+.PentaContainer img {
+    display: block;
+    width: 100%;
+    padding: 5px;
+}
+
+.Penta4 {
+    height: 350px;
+}
+
+.Penta5 {
+    margin-top: 55px;
+}
+
+
+/******************************************
+/* LAYOUT
+/*******************************************/
+header {
+    padding-top: 15px;
+    text-align: center;
+    height: 60px;
+    background: white;
+}
+
+header nav ul {
+    display: inline-block;
+    margin: 0 auto;
+    padding-bottom: 10px;
+}
+
+header nav ul li {
+    display: inline;
+    margin: 0 20px;
+}
+
+header nav ul li a {
+
+    font-weight: bold;
+    color: black;
+}
+
+header nav ul img {
+}
+
+.NavLeft {
+    margin-left: 75px;
+    float: left;
+}
+
+.NavLeft img {
+    width: 70px; 
+    height: 30px;
+}
+
+.NavRight {
+    float: right;
+    margin-right: 75px;
+    font-weight: bold;
+    color: black;
+}
+
+
+footer {
+
+}
+
+/******************************************
+/* ADDITIONAL STYLES
+/*******************************************/
+
+@media only screen and (max-width: 600px) {
+
+    * {
+        max-width: 600px;
+        margin: 0;
+
+    }
+    header {
+        padding-top: 20px;
+        width: 100%;
+        height: 150px;
+        text-align: center;
+    }
+
+    header ul {
+        float: right;
+    }
+
+    header ul li {
+        margin-bottom: 20px;
+        padding-bottom: 20px;
+        float: left;
+        font-size: 1rem;
+        width: 20%;
+    }
+
+    .NavLeft {
+        float: left;
+    }
+
+    .NavRight {
+        margin-top: -80px;
+        float: left;
+        margin-left: 50px;
+    }
+
+    body header nav .HeaderUl {
+        float: right;
+        width: 70%;
+    }
+
+    .HeroContainer > * {
+        margin: 0 50px;
+    }
+
+    .HeroContainer {
+        height: 1000px;
+        padding-left: 0px;
+        background-size: 130% 40%;
+        background-position: 0px 0;
+    }
+
+    .HeroPanel {
+        font-size: 0.8rem;
+    }
+
+    .CarouselContainer {
+        margin-right: 30px;
+        margin-top: -50px;
+    }
+
+    .CarouselButton {
+        background: gray;
+    }
+
+    .OpenHours {
+        float: right;
+        margin-right: 90px;
+        margin-top: 220px;
+        color: black;
+        transform: rotate(0deg);
+    }
+
+    .HeroTrio {
+        margin-top: -40px;
+    }
+
+    .TrioChild {
+        width: 100%;
+        display: block;
+        text-align: center;
+        padding: 0 0px;
+    }
+
+    .BetaContainer {
+        background: rgb(214, 222, 224);
+        height: 600px;
+        padding: 50px 50px;
+    }
+    
+    .BetaLeft {
+        text-align: center;
+        width: 100%;
+        display: block;
+    }
+
+    .BetaLeft h2 {
+        margin-bottom: 10px;
+    }
+
+    .BetaRight {
+        margin-right: 50px;
+        width: 100%;
+        display: block;
+    }
+
+    .ThetaContainer {
+        padding: 50px 0px 0 0px;
+        height: 1250px;
+        width: 100%;
+    }
+    
+
+    .ThetaContainer img {
+        height: 300px;
+        width: 250px;
+    }
+
+    
+    .Profile {
+        float: none;
+        display: block;
+        width: 100%;
+        height: 350px;
+        margin: 0 auto 50px auto;
+        width: 300px;
+        border: 2px solid black;
+    }
+    
+    .NameBox {
+        padding-top: 5px;
+        height: 50px;
+        background: black;
+
+    }
+    
+    .NameBox h4 {
+        color: white;
+        margin-top: 0;
+        margin-bottom: 0;
+    }
+
+    .QuadraContainer {
+        padding-left: 0px;
+        padding-top: 90px;
+        text-align: center;
+    }
+
+    .PentaContainer hr {
+        width: 2%;
+        margin: 0 auto;
+        margin-top: 20px;
+        margin-bottom: 20px;
+    }
+
+    .Penta4 {
+        height: 150px;
+    }
+    
+    .Penta5 {
+        margin-top: 40px;
+    }
+}

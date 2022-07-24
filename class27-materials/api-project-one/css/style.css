@@ -1,0 +1,26 @@
+/******************************************
+/* CSS
+/*******************************************/
+
+/* Box Model Hack */
+*{
+  box-sizing: border-box;
+  text-align: center;
+}
+
+/******************************************
+/* LAYOUT
+/*******************************************/
+img{
+  display: block;
+  margin: 50px auto;
+}
+
+body{
+  margin-top: 50px;
+  background-image: url('https://i.pinimg.com/originals/fa/48/7d/fa487d072c17cf4053689616ddfc02b3.jpg');
+}
+
+/******************************************
+/* ADDITIONAL STYLES
+/*******************************************/

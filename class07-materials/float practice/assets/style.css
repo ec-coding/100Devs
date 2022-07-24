@@ -1,0 +1,61 @@
+*{
+    box-sizing: border-box;
+}
+
+header, footer{
+    height: 200px;
+    border: 3px solid black;
+    width: 100%;
+    clear: both;
+}
+section{
+    height: 500px;
+    width: 33.3333%;
+    border: 3px solid black;
+    float: left;
+}
+footer{
+    bottom: 0px;
+    left: 0px;
+}
+
+@media only screen and (max-width: 800px) {
+    body{
+        background-color: lightcyan;
+    }
+    section{
+        height: 200px;
+        width: 100%;
+        border: 2px solid black;
+    }
+  }
+
+@media only screen and (min-width: 801px) and (max-width: 1200px) {
+    body{
+        background-color: lightcoral;
+    }
+    section{
+        height: 300px;
+        width: 50%;
+        border: 3px solid black;
+        float: left;
+    }
+    section+section{
+        height: 600px;
+        width: 50%;
+        border: 3px solid black;
+        float: right;
+    }
+    section+section+section{
+        height: 300px;
+        width: 50%;
+        border: 3px solid black;
+        float: left;
+    }
+  }
+
+@media only screen and (min-width: 1201px) and (max-width: 1600px) {
+    body{
+        background-color: lightblue;
+    }
+  }

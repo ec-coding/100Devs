@@ -1,0 +1,165 @@
+/* Box Model Hack */
+* {
+     box-sizing: border-box;
+     margin: 0;
+     font-size: 100%;
+     font-family: 'Roboto', sans-serif;
+}
+
+/* Clear fix hack */
+.clearfix:after {
+     content: ".";
+     display: block;
+     clear: both;
+     visibility: hidden;
+     line-height: 0;
+     height: 0;
+}
+
+.clear {
+	clear: both;
+}
+
+/******************************************
+/* BASE STYLES
+/*******************************************/
+
+body main.container{
+     margin-top: 30px;
+}
+.container{
+     width: 1248px;
+     margin: 0 auto;
+}
+.HeroContainer{
+     height: 500px;
+     padding: 5px;
+}
+.HeroContainer div{
+     height: 50px;
+}
+.HeroContainer h1{
+     font-size: 1.9rem;
+     margin-bottom: 10px;
+}
+.HeroContainer h2{
+     float: left;
+     font-size: 1.4rem;
+     color: darkslategrey;
+}
+.HeroContainer h2 + h2{
+     float: right;
+     color: gray;
+}
+.HeroQuarter{
+     padding: 100px 20px 50px 15px;
+     background: rgb(56, 92, 158);
+     float: left;
+     width: 48%;
+     height: 190px;
+}
+.HeroQuarter h2{
+     font-size: 1.2rem;
+     margin-bottom: 10px;
+     color: white;
+}
+.LeftQuarter{
+     margin-right: 20px;
+}
+.HeroQuarter + .HeroQuarter +.HeroQuarter{
+     margin-top: 20px;
+}
+.HeroLeft, .HeroRight{
+     color: white;
+}
+.HeroLeft{
+     width: 50%;
+     padding: 0 20px 0 0;
+     height: 500px;
+     float: left;
+}
+.HeroLeft .Hero p{
+     margin-bottom: 10px;
+}
+.HeroRight{
+     width: 50%;
+     height: 500px;
+     float: right;
+}
+.Hero{
+     height: 400px;
+     background: rgb(80, 65, 65);
+     padding-left: 20px;
+     padding-top: 260px;
+}
+header + main + section h2{
+     font-size: 1.5rem;
+     margin: 0 5px;
+}
+.Beta{
+     margin-top: 20px;
+}
+.Beta .BetaBlock h2{
+     font-size: 1.2rem;
+     margin: 0 0 10px 0;    
+}
+.Beta .BetaBlock p{
+     margin: 0 0 10px 0;
+     padding-right: 5px;
+     color: rgb(30, 51, 51)
+}
+.Beta .BetaBlock span{
+     color: gray;
+     font-size: 0.9rem;
+}     
+.BetaBlock{
+     padding: 0 5px;
+     width: 33.3333%;
+     float: left;
+}
+.BetaBlock + .BetaBlock{
+     padding-left: 20px;
+}
+.BetaBlock img{
+     width: 390px;
+     height: 200px;
+}
+
+/******************************************
+/* LAYOUT
+/*******************************************/
+header{
+     height: 50px;
+     width: 100%;
+     background: black;
+}
+header nav > *{
+     margin: 10px 0;
+     display: inline-block;
+}
+header nav{
+     padding: 5px;
+}
+header nav a{
+     margin-right: 30px;
+}
+header nav ul{
+     float: right;
+}
+header nav a{
+     text-decoration: none;
+     color: white;
+}
+header nav li{
+     margin-left: 10px;
+     float: left;
+     list-style: none;
+}
+header ul form{
+     margin-top: -3px;
+}
+
+
+/******************************************
+/* ADDITIONAL STYLES
+/*******************************************/
