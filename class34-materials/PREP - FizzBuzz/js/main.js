@@ -31,3 +31,39 @@ function fizzBuzz(num){
     }
 }
 
+ //PARAMETERS - RETURNS - EXAMPLES - PSEUDO CODE
+
+ // PARAMETERS:
+ // Array of Integer Pairs
+ // Each pair = People who get on the bus + people who get off the bus
+
+// RETURNS:
+// # of people still on the bus after the last bus station
+
+// EXAMPLES: 
+// [10,0], [3,5], [5, 8] = 5 people left on bus
+
+let number = function(busStops){
+    //add first numbers in array = num1
+    //add second numbers in array = num2
+    //subtract num2 from num1
+    return number.reduce((totalPeople, currentStop) => totalPeople + currentStop[0] - currentStop[1] , 0)
+}
+
+ //PARAMETERS - RETURNS - EXAMPLES - PSEUDO CODE
+ // Operation = Mathematical sign
+ // Value1 = Number; Value2 = Number
+ // Returns Value1 Operation Value2
+ // Example: ('*' 7, 4) --> 28
+
+ function basicOp(operation, value1, value2) {
+    if (operation == "-") {
+        return value1 - value2;
+    } else if (operation == "+") {
+        return value1 + value2;
+    } else if (operation == "/") {
+        return value1 / value2;
+    } else if (operation == "*") {
+        return value1 * value2;
+    }
+ }
