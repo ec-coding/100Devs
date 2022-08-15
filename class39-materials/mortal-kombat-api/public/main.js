@@ -3,7 +3,7 @@ document.querySelector('button').addEventListener('click', apiRequest)
 async function apiRequest(){
     const ninjaName = document.querySelector('input').value
     try{
-        const response = await fetch(`https://simple-rap-api-fun-ec.herokuapp.com/api/${ninjaName}`)
+        const response = await fetch(`https://mk-ninja-api.herokuapp.com/api/${ninjaName}`)
         const data = await response.json()
 
         console.log(data)
