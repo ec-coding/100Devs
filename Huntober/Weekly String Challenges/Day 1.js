@@ -18,11 +18,6 @@ function charReplace(str) {
   let numbersLetters = { '0': 'O', '1': 'I', '2': 'Z', '3': 'E', '4': 'h', '5': 'S', '6': 'G', '7': 'L', '8': 'B', '9': 'q' }
   let lettersNumbers = { 'O': '0', 'I': '1', 'Z': '2', 'E': '3', 'h': '4', 'S': '5', 'G': '6', 'L': '7', 'B': '8', 'q': '9' }
 
-  let str = "PR0-T1P #hqB: 1T'5 N1C3 T0 5AY H3770."
-  console.log(numbersLetters['1'])
-  // implement fix function -> 
-  // "PRO-TIP #498: IT'S NICE TO SAY HELLO."
-
   let newStr = ''
   for (i = 0; i < str.length; i++) {
     let currentChar = str.charAt(i)
