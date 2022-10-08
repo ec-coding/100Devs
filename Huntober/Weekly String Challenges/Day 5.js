@@ -12,12 +12,18 @@ let str = "The Pawshank Redemption,Caturday Night Live,Only Meworders in the Bui
 
 let result = str.replaceAll(/dog|bark|bone/gi, ' ')
 let splitStr = result.split(',')
-let strTrim = splitStr.map((a) => a.trim())
+
+let arr = []
+for (i = 0; i < splitStr.length; i++) {
+  if ((splitStr[i].split('')[0] != ' ') && (splitStr[i].split('')[splitStr[i].length-1] != ' ')) {
+      arr.push(splitStr[i])
+  }
+}
 
 let newArr = []
-for (i = 0; i < strTrim.length; i++) {
-  if (strTrim[i].length % 5 !== 0) {
-    newArr.push(strTrim[i])
+for (i = 0; i < arr.length; i++) {
+  if (arr[i].length % 5 !== 0) {
+    newArr.push(arr[i])
   }
 }
 
@@ -60,3 +66,6 @@ for (i = 0; i < shiniestArr.length; i++) {
 }
 
 console.log(finalArr)
+
+// Result: ["Amewican Idol", "Battlestar Catlactica", "NYPD Mew", "30", "Arrested  velopment", "Teenage Mewtant Ninja Turtles", "The  pranos", "Mewgerton", "Mewster Rogers' Neighborhood"]
+// Count: 9
