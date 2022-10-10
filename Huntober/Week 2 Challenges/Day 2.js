@@ -26,31 +26,29 @@
 myArray = ['abc', 'xyz', 1, 2, 'Hey!']
 
 function arrLeft(value) {
-  if (myArray.indexOf(value) != 0) {
-  let indexOfValue = myArray.findIndex((element) => (element === value));
-  let leftOfIndex = indexOfValue - 1
-  let leftOfIndexValue = myArray.find((element, index) => index === leftOfIndex)
-  myArray.splice(indexOfValue, 1, leftOfIndexValue)
-  myArray.splice(leftOfIndex, 1, value)
-  return myArray
-  } else {
-    return myArray
-  }
+    if ((myArray.indexOf(value) != 0) && (myArray.includes(value))) {
+        let indexOfValue = myArray.findIndex((element) => (element === value));
+        let leftOfIndex = indexOfValue - 1
+        let leftOfIndexValue = myArray.find((element, index) => index === leftOfIndex)
+        myArray.splice(indexOfValue, 1, leftOfIndexValue)
+        myArray.splice(leftOfIndex, 1, value)
+        return myArray
+    } else {
+        return myArray
+    }
 }
 
 function arrRight(value) {
-  console.log(myArray.length - 1)
-  console.log(myArray.indexOf(value))
-  if (myArray.indexOf(value) != myArray.length - 1) {
-  let indexOfValue = myArray.findIndex((element) => (element === value));
-  let rightOfIndex = indexOfValue + 1
-  let rightOfIndexValue = myArray.find((element, index) => index === rightOfIndex)
-  myArray.splice(indexOfValue, 1, rightOfIndexValue)
-  myArray.splice(rightOfIndex, 1, value)
-  return myArray
-  } else {
-    return myArray
-  }
+    if ((myArray.indexOf(value) != myArray.length - 1) && (myArray.includes(value))) {
+        let indexOfValue = myArray.findIndex((element) => (element === value));
+        let rightOfIndex = indexOfValue + 1
+        let rightOfIndexValue = myArray.find((element, index) => index === rightOfIndex)
+        myArray.splice(indexOfValue, 1, rightOfIndexValue)
+        myArray.splice(rightOfIndex, 1, value)
+        return myArray
+    } else {
+        return myArray
+    }
 }
 
 // PREP
