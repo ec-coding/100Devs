@@ -25,7 +25,7 @@
 
 myArray = ['abc', 'xyz', 1, 2, 'Hey!']
 
-function arrLeft(value) {
+function arrLeft(myArray, value) {
     if ((myArray.indexOf(value) != 0) && (myArray.includes(value))) {
         let indexOfValue = myArray.findIndex((element) => (element === value));
         let leftOfIndex = indexOfValue - 1
@@ -38,7 +38,7 @@ function arrLeft(value) {
     }
 }
 
-function arrRight(value) {
+function arrRight(myArray, value) {
     if ((myArray.indexOf(value) != myArray.length - 1) && (myArray.includes(value))) {
         let indexOfValue = myArray.findIndex((element) => (element === value));
         let rightOfIndex = indexOfValue + 1
