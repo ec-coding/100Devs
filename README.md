@@ -1,7 +1,5 @@
 <br/>
-<p align="center">
-<h1>100Devs</h1>
-</p>
+<h1 align="center">100Devs</h1>
 <br/>
 <p align="center">
 <img src="https://images-ext-1.discordapp.net/external/hMkKSgJ2kaIMPC5A-g_W_UEu8NuswcN0l7Rm-puWDZM/https/user-assets.out.sh/user-assets/1638935/VhIW2t2ReqeDIuNX/lwl-540.png?width=442&height=442" width="">
