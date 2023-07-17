@@ -21,3 +21,7 @@ My coding journey through Leon Noel's training course
 - HTML
     - EJS (Embedded JavaScript)
     - HBS (Handlebars)
+
+- CSS
+    - Bootstrap
+    - Tailwind
