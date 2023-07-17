@@ -16,3 +16,8 @@ My coding journey through Leon Noel's training course
  
  - Data Structures & Algorithms
     - Arrays 
+
+## Lessons Learned:
+- HTML
+    - EJS (Embedded JavaScript)
+    - HBS (Handlebars)
