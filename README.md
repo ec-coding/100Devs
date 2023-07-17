@@ -18,10 +18,11 @@ My coding journey through Leon Noel's training course
     - Arrays 
 
 ## Lessons Learned:
-- HTML
-    - EJS (Embedded JavaScript)
-    - HBS (Handlebars)
+- Sass
+    - Using themify to integrate toggle-friendly visual formats
+    - Simplifying media queries for individual elements
 
-- CSS
-    - Bootstrap
-    - Tailwind
+- MySQL
+    - Building tables with data-restrictive properties
+    - Connecting local databases with a cloud surface, such as Microsoft Azure
+
