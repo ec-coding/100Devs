@@ -9,15 +9,15 @@
 </p>
 
 ## Lessons Learned:
- - ##HTML
-    - EJS
-    - HBS
- - ##CSS
+ - HTML
+    - EJS (Embedded JavaScript)
+    - HBS (Handlebars)
+ - CSS
     - Bootstrap
     - Tailwind
- - ##JavaScript
+ - JavaScript
     - React
     - Node.js
- - ##Data Structures & Algorithms
+ - Data Structures & Algorithms
     - Arrays 
 
