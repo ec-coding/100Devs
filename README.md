@@ -3,16 +3,16 @@ My coding journey through Leon Noel's training course
 
 ## Lessons Learned:
 - HTML
-  - EJS
-  - HBS
+    - EJS
+    - HBS
 
 - CSS
-  - Bootstrap
-  - Tailwind
+    - Bootstrap
+    - Tailwind
 
 - JavaScript
-  - React
-  - Node.js
+    - React
+    - Node.js
  
 - Data Structures & Algorithms
-  - Arrays 
+    - Arrays 
